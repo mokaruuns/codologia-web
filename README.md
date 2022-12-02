@@ -3,6 +3,7 @@
 - [Этичный хакер](/hacker)
   - [HTML/CSS](/hacker/1_HTML_CSS_introduction)
   - [Linux](/hacker/2_Linux_introduction)
+  - [HTML](/hacker/3_HTML_forms)
 
 ### Связь со мной
 
