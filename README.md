@@ -4,6 +4,7 @@
   - [HTML/CSS](/hacker/1_HTML_CSS_introduction)
   - [Linux](/hacker/2_Linux_introduction)
   - [HTML](/hacker/3_HTML)
+  - [HTML FORM](/hacker/3_HTML_FORM)
 
 ### Связь со мной
 
