@@ -170,4 +170,9 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     1. В $_POST задайте ещё данные `age`, где будет храниться возраст пользователя.
     2. Сделайте условие проверки, при котором, если пользователю меньше 18 лет, то ему выведется предупреждение, что он
        не может самостоятельно зарегистрироваться
-    3. Для этого используйте `if`, `echo` 
+    3. Для этого используйте `if`, `echo`
+
+### Полезные ссылки
+1. [replit.com](https://replit.com/languages/php)
+2. [Условия if в PHP](https://php.zone/kurs-php-dlya-nachinayushih/usloviya-v-php)
+3. [Справка chmod](https://ru.hostings.info/termins/chmod.html)
