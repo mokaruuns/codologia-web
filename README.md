@@ -6,7 +6,6 @@
   - [HTML](/hacker/3_HTML)
   - [HTML_FORM](/hacker/3_HTML_FORM)
   - [PHP](/hacker/4_PHP)
-  - [Новый урок](/next%20lesson/README.md)
 
 
 ### Связь со мной
