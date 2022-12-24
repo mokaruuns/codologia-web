@@ -6,6 +6,7 @@
   - [HTML](/hacker/3_HTML)
   - [HTML_FORM](/hacker/3_HTML_FORM)
   - [PHP](/hacker/4_PHP)
+  - [LINUX_CTF](/hacker/5_LINUX_CTF)
 
 
 ### Связь со мной
