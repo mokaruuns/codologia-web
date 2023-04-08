@@ -61,8 +61,9 @@ def get_from_file():
             for line in file:
                 data = line.strip().split(":")
                 id_ = int(data[0])
-                score = int(data[1])
-                d[id_] = score
+                name = data[1]
+                score = int(data[2])
+                d[id_] = {"score": score, "name": name}
         return d
 
 
@@ -70,7 +71,7 @@ def put_to_file(d):
     print("запись в файл")
     with open("score.txt", "w") as file:
         for id_ in d:
-            file.write(str(id_) + ":" + str(d[id_]) + "\n")
+            file.write(str(id_) + ":" + d[id_]['name'] + ':' + str(d[id_]['score']) + "\n")
 
 
 @bot.message_handler(commands=['random'])
@@ -84,11 +85,26 @@ def random_1(message):
     score = random.randint(1, 6)
     d = get_from_file()
     if id_ in d:
-        d[id_] += score
+        d[id_]['score'] += score
     else:
-        d[id_] = score
+        d[id_] = {'score': score, 'name': user_name}
     put_to_file(d)
-    bot.send_message(id_, score)
+    bot.send_message(id_, str(score))
+
+    path = "images/" + str(score) + ".jpg"
+    # images/1.jpg
+    photo = open(path, 'rb')
+    bot.send_photo(id_, photo=photo)
+
+
+@bot.message_handler(commands=['global'])
+def glob(message):
+    d = get_from_file()
+    mess = ""
+    for id in d:
+        mess += d[id]['name'] + ": " + str(d[id]['score']) + "\n"
+    bot.send_message(message.chat.id, mess)
+
 
 # постоянная прослушка
 bot.infinity_polling()

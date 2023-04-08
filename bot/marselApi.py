@@ -1,4 +1,5 @@
 import requests
+# https://kitsu.io/api/edge/anime?filter[text]=tokio
 
 link = "http://numbersapi.com/"  # get-запрос на определенный api
 link2 = "https://catfact.ninja/facta"  # get-запрос на определенный api
