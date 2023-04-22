@@ -1,0 +1,42 @@
+{
+  "1": {
+    "action": "погулять с собакой",
+    "age_min": 10,
+    "age_max": 100,
+    "time": 2,
+    "price": 0,
+    "category": "развлечение"
+  },
+  "2": {
+    "action": "посмотреть фильм",
+    "age_min": 12,
+    "age_max": 100,
+    "time": 2,
+    "price": 200,
+    "category": "развлечение"
+  },
+  "3": {
+    "action": "сходить в музей",
+    "age_min": 6,
+    "age_max": 100,
+    "time": 3,
+    "price": 500,
+    "category": "культура"
+  },
+  "4": {
+    "action": "прочитать книгу",
+    "age_min": 18,
+    "age_max": 100,
+    "time": 4,
+    "price": 500,
+    "category": "образование"
+  },
+  "5": {
+    "action": "покататься на велосипеде",
+    "age_min": 8,
+    "age_max": 100,
+    "time": 3,
+    "price": 0,
+    "category": "спорт"
+  }
+}
